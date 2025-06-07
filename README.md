@@ -1,18 +1,51 @@
-# Pollutiondb
+# PollutionDB Monitor
 
-To start your Phoenix server:
+Aplikacja webowa do monitorowania stacji pomiaru zanieczyszczeń środowiskowych.  
+Projekt zrealizowany na potrzeby przedmiotu **Programowanie w językach Erlang/Elixir**.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Autor
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+**Szymon Barczyk**
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Opis
 
-## Learn more
+Aplikacja umożliwia:
+- Zarządzanie stacjami pomiarowymi (dodawanie, wyświetlanie listy, filtrowanie po lokalizacji).
+- Dodawanie nowych odczytów pomiarów dla stacji.
+- Wyszukiwanie oraz filtrowanie odczytów według daty.
+- Prosty i przejrzysty interfejs webowy zbudowany w oparciu o Phoenix LiveView.
+- Nawigację między poszczególnymi widokami aplikacji.
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+## Uruchomienie
+
+Aby uruchomić serwer Phoenix:
+
+1. Zainstaluj zależności i skonfiguruj bazę danych:
+
+    ```bash
+    mix setup
+    ```
+
+2. Uruchom serwer Phoenix:
+
+    ```bash
+    mix phx.server
+    ```
+
+   lub w trybie IEx:
+
+    ```bash
+    iex -S mix phx.server
+    ```
+
+3. Otwórz aplikację w przeglądarce pod adresem: [http://localhost:4000](http://localhost:4000)
+
+## Technologie
+
+- Elixir
+- Phoenix Framework (LiveView)
+- TailwindCSS (podstawowe stylowanie)
+
+## Uwagi
+
+Projekt został zrealizowany w celach edukacyjnych.
